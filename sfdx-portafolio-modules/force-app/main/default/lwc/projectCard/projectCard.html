@@ -1,3 +1,17 @@
 <template>
-    
+    <lightning-card title={projectTitle} icon-name="standard:case">
+        <div class="slds-var-p-around_medium">
+            <p class="slds-text-body_regular">{projectDescription}</p>
+            <div class="slds-var-m-top_small">
+                <template if:true={technologies}>
+                    <div class="slds-text-title_caps slds-var-m-bottom_xx-small">Tech Stack:</div>
+                    <span class="slds-badge slds-theme_success">{technologies}</span>
+                </template>
+            </div>
+            <div class="slds-var-m-top_medium">
+                <lightning-button label="Ver Detalles de Integración" variant="brand" onclick="{handleDetailsClick}">
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
 </template>

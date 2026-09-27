@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation. -->
     <header class="app-header">
         <div class="logo-container">
-            <span class="brand-title">&lt;DevPortafolio / &gt;</span>
+            <span class="brand-title">&lt;DevPortafolio/&gt;</span>
         </div>
         <nav class="main-nav">
             <ul class="nav-list">
@@ -22,13 +22,13 @@
             </ul>
         </nav>
     </header>
-        <!-- Main Content Area -->
-         <main class="main-content">
+        <!-- Main Content Area. -->
+        <main class="main-content">
             <!-- Hero Section -->
              <section id="hero" class="hero-section">
                 <div class="hero-container">
                     <h1 class="hero-subtitle">Desarrollador Web & Especialista Salesforce LWC</h1>
-                    <p class="hero-subtitle">Construyendo soluciones escalables, arquitecturas de software eficientes e Intregaciones en la nube.</p>
+                    <p class="hero-subtitle">Construyendo Soluciones Escalables, Arquitecturas de Software Eficientes e Intregaciones en la nube.</p>
                     <div class="cta-container">
                         <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
                         <a href="#contact" class="btn btn-secondary">Contactar</a>
@@ -36,21 +36,21 @@
                 <div>
              </section>
 
-                 <!-- Technical Stack Section -->
+                 <!-- Technical Stack Section. -->
                 <section id="skills" class="skills-section">
                     <h2 class="section-title">Core Competencies & Stack</h2>
                     <div clas="skills-grid">
                             <!-- Los modulos de tecnologías se renderizarán dinámicamente o mediante CSS -->
                     </div>
                 </section>
-                    <!-- Projects Showcase Section -->
+                    <!-- Projects Showcase Section. -->
                     <section id="projects" class="projects-section">
                         <h2 class="section-title">Proyectos Destacados</h2>
                         <div id="projects-container" class="projects-grid">
                         <!-- Target container para la inyeccción de componentes LWC o JS dinámico --> 
                         </div>
                     </section>
-                     <!-- Contact Section -->
+                     <!-- Contact Section. -->
                       <section id="contact" class="contact-section">
                         <h2 class="section-title">Contacto</h2>
                         <form id="contact-form" class="contact-form">
@@ -72,14 +72,23 @@
                             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                         </form>
                     </section>
-        </main>
-        <!-- Application Footer -->
+        <!-- Sección de Módulo Salesforce DX / LWC. -->
+         <section id = "salesforce-dx" class = "project-card slds-container">
+            <h2>Módulo Salesforce DX & Lightning Web Components</h2>
+            <p>
+                Módulo desarrollado con Arquitectura
+                <strong>SFDX</strong>, demostrando la Integración Reactiva entre el Fronted (LWC) y el Backend de Salesforce (Apex controller mediante
+                <code>@wire</code>).
+            </p>
+         </section>
+        </main> 
+        <!-- Application Footer. -->
         <footer class="footer">
             <div class="container">
                 <p>&copy; 2026 Developer Portafolio. Todos los derechos reservados.</p>
             </div>
         </footer>
-        <!-- Scripts Injection -->
+        <!-- Scripts Injection. -->
          <script src="app.js" defer></script>
     </body>
 </html>    

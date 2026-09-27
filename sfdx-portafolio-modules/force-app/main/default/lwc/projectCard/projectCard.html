@@ -2,14 +2,25 @@
     <lightning-card title={projectTitle} icon-name="standard:case">
         <div class="slds-var-p-around_medium">
             <p class="slds-text-body_regular">{projectDescription}</p>
-            <div class="slds-var-m-top_small">
-                <template if:true={technologies}>
-                    <div class="slds-text-title_caps slds-var-m-bottom_xx-small">Tech Stack:</div>
-                    <span class="slds-badge slds-theme_success">{technologies}</span>
-                </template>
-            </div>
+
+            <!-- Renderizado iterativo de proyectos recibidos desde Apex -->
+            <template if:true={projects}>
+                <div class="slds-var-m-top_medium">
+                    <template for:each={projects} for:item="proj">
+                        <div key={proj.id} class="slds-box slds-theme_shade slds-var-m-bottom_small">
+                            <h4 class="slds-text-heading_small">{proj.title}</h4>
+                            <p class="slds-text-body_small">{proj.description}</p>
+                            <span class="slds-badge slds-theme_success slds-var-m-top_xx-small">{proj.techStack}</span>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            
             <div class="slds-var-m-top_medium">
-                <lightning-button label="Ver Detalles de Integración" variant="brand" onclick="{handleDetailsClick}">
+                <lightning-button 
+                    label="Ver Detalles de Integración" 
+                    variant="brand" 
+                    onclick={handleDetailsClick}>
                 </lightning-button>
             </div>
         </div>
